@@ -22,7 +22,8 @@ export class _Blank extends React.Component {
     Toggle_14: true,
     Input_21: "",
     CheckBox_31: true,
-    Radio_27: true
+    Radio_27: true,
+    Input_100: ""
   }
 
   render = () => (
@@ -302,6 +303,15 @@ export class _Blank extends React.Component {
                     checked={this.state.Radio_27}
                     onChange={nextChecked =>
                       this.setState({ Radio_27: nextChecked })
+                    }
+                  />
+                  <Input
+                    placeholder="Text input placeholder"
+                    editable={true}
+                    style={{ overflow: "visible", borderStyle: "solid" }}
+                    value={this.state.Input_100}
+                    onChangeText={nextValue =>
+                      this.setState({ Input_100: nextValue })
                     }
                   />
                 </View>
